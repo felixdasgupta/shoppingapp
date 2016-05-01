@@ -1,0 +1,14 @@
+<div class="col-sm-8 col-sm-offset-2" style="text-align:center;">
+	<h2 style="font-weight:lighter; color:cornflowerblue;">{{ whichitem|uppercase }}</h2>
+	<p style="text-align:center;"><a ng-href="#/">Browse Other Items</a></p>
+	<div class="col-sm-6" ng-repeat="item in items">
+		<a ng-href="#/Inventory/{{ whichitem }}/{{ item.id }}">
+			<div id="Item">
+				<img ng-src="{{ item.image }}">
+				<h4>{{ item.title }}</h4>
+				<h1>${{ item.price }}</h1>
+			</div>
+		</a>
+	</div>
+
+</div>
