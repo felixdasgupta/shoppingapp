@@ -1,6 +1,5 @@
 var myApp = angular.module('myApp',
   ['ngRoute'])
-  .constant('FIREBASE_URL', 'https://angularjs-learn.firebaseio.com/');
 
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
